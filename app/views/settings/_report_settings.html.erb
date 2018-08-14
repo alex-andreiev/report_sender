@@ -1,0 +1,10 @@
+<fieldset>
+<legend><%= l(:report_sender_label_callback_settings) %></legend>
+
+<p>
+  <label><%= l(:report_sender_label_callback_url) %></label><%= text_field_tag 'settings[callback_url]', @settings['callback_url'], :size => 70 %>
+</p>
+<p>
+  <label><%= l(:report_sender_label_callback_port) %></label><%= text_field_tag 'settings[callback_port]', @settings['callback_port'], :size => 70 %>
+</p>
+</fieldset>
